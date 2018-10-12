@@ -1,0 +1,55 @@
+button {
+    outline:none;
+}
+
+.pad {
+    display:block;
+    position:relative;
+	min-height:8rem;
+    border-radius:.4rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #808080;
+    background: radial-gradient(#c9c9c9, #a0a0a0);
+    border: 1px solid #a0a0a0;
+    transition: all ease .05s;
+    width:100%;
+    cursor:pointer;
+    padding:0;
+}
+.pad:hover, .pad.is-loading {
+	background:radial-gradient(#b9b9b9, #7d7777);
+	box-shadow:0.1rem 0.1rem 0.1rem 0.1rem #888585;
+	border:1px solid #7d7777;
+}
+.pad.is-loading {
+    cursor:not-allowed;
+}
+.pad.active {
+	transform:translate(0.1rem, 0.1rem);
+    border:1px solid #bbb61f;
+    box-shadow:0.1rem 0.1rem 0.1rem 0.005rem #bbb61f;
+    background:radial-gradient(#f3dd8c, #bbb61f);
+}
+.pad.dropover {
+    background: radial-gradient(#00aaff, #1683bf);
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #1679ae;
+    border: 1px solid #4ab8f1;
+}
+.pad.upload:before {
+    content: " ";
+    display: block;
+    width: 46px;
+    height: 46px;
+    margin: auto;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: animation-loader 1.2s linear infinite;
+}
+@keyframes animation-loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
