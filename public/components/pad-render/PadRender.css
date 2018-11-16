@@ -5,7 +5,7 @@ button {
 .pad {
     display:block;
     position:relative;
-	min-height:8rem;
+	min-height:7rem;
     border-radius:.4rem;
     box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #808080;
     background: radial-gradient(#c9c9c9, #a0a0a0);

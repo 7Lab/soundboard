@@ -92,3 +92,9 @@ input[type="range"]:hover {
 	
 	-webkit-box-shadow: inset #000 1px 1px 1px, inset #000 -1px -1px 1px;
 }
+
+@media (max-width: 768px) {
+	input[type="range"], input[type="range"]:disabled:hover {
+		width:150px;
+	}
+}
